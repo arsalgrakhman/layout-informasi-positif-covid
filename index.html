@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans&display=swap" rel="stylesheet">
+	<style>
+		:root {
+		--margin-bawah: 30px; 	
+		}
+		* {
+			font-weight: bold;
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			text-transform: uppercase;
+		}
+
+		h2 {
+			font-size: 50px;
+			font-family: 'Fjalla One', sans-serif;
+		}
+		p {
+			font-family: 'Noto Sans', sans-serif;
+		}
+		
+		.pembungkus {
+			/*border: 2px solid black;*/
+			width: 800px;
+			margin: auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.hero-banner {
+			padding: 10px;
+			margin-bottom: var(--margin-bawah);
+			background-color: navy;
+			width: 400px;
+			height: 200px;
+			border-radius: 0 0 15px 15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.hero-banner .title {
+			color: #fff;
+			width: 65%;
+		}
+		.hero-banner .date {
+			line-height: 0.9;
+			width: 20%;
+			background: #fff;
+			color: navy;
+			padding: 4px;
+			border-radius: 20px;
+			text-align: center;
+		}
+		.date span {
+			font-size: 3rem;
+			display: block;
+		}
+		.date p {
+			font-size: 0.8rem;
+			text-transform: capitalize;
+
+		}
+		.title span {
+			font-size: 3.2rem;
+		}
+		.kotak {
+			border-radius: 15px;
+			position: relative;
+			width: 300px;
+			padding: 10px 30px;
+			color: #fff;
+			margin-bottom: var(--margin-bawah);
+			text-align: center;
+		}
+		/*.kotak:nth-child(2n) {
+			margin-bottom: 0;
+		}*/
+		.kotak span {
+			text-align: left;
+			width: 85px;
+			color: black;
+			border-radius: 10px;
+			padding: 10px;
+			position: absolute;
+			bottom: -15px;
+			left: -10px;
+			background-color: goldenrod;
+		}
+
+		.merah {
+			background-color: #900C3F;
+		}
+
+		.aqua {
+			background-color: darkcyan;
+		}
+
+		.abu {
+			background-color: darkslategray;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="pembungkus">
+		<div class="hero-banner">
+			<div class="title">
+				<p>perkembangan</p>
+				<span>covid-19</span>
+				di indonesia</p>
+			</div>
+			<div class="date">
+				<p>januari <span>14</span> 2021</p>
+			</div>
+		</div>
+		<div class="kotak merah">
+			<h2>869.600</h2>
+			<p>positif</p>
+			<span>+11.1557</span>
+		</div>
+		<div class="kotak aqua">
+			<h2>711.205</h2>
+			<p>sembuh</p>
+			<span>+7.741</span>
+		</div>
+		<div class="kotak abu">
+			<h2>25.246</h2>
+			<p>meninggal</p>
+			<span>+295</span>
+		</div>
+	</div>
+</body>
+</html>
